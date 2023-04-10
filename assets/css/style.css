@@ -1,0 +1,48 @@
+
+body{
+    background-image: url(../img/fondo7.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fondoNav{
+    background-image: linear-gradient(to bottom, #000f0f, #021414, #031818, #041c1b, #04201f, #052c2b, #053937, #054744, #07625f, #087f7d, #069d9b, #00bcbc);
+    -webkit-box-shadow: 3px 15px 38px 3px rgba(78,194,212,1);
+    -moz-box-shadow: 3px 15px 38px 3px rgba(78,194,212,1);
+    box-shadow: 3px 15px 38px 3px rgba(78,194,212,1);
+}
+.imgLogo{
+    margin: 0;
+}
+.enlaceNav{
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+    margin: 1.2rem;
+}
+.enlaceNav::hoover{
+    color:red;
+}
+
+.tamañoBuscador{
+    font-size: 5rem;
+}
+
+.tabla{
+    background-image: linear-gradient(to right, #360033, #2e295c, #014a7b, #00698c, #0b8793);
+    border-radius: 15px;
+    -webkit-box-shadow: 4px 4px 41px 16px rgba(255,0,255,1);
+    -moz-box-shadow: 4px 4px 41px 16px rgba(255,0,255,1);
+    box-shadow: 4px 4px 41px 16px rgba(255,0,255,1);
+   
+    
+    
+}
+.letrasTabla{
+    color: white;
+    font-size: 30px;
+
+}
+
+.imgTbody{
+    color: white;
+}
