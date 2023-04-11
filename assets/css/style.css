@@ -1,8 +1,8 @@
 
 body{
     background-image: url(../img/fondo7.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: repeat;
+    background-size: 100%;
 }
 .fondoNav{
     background-image: linear-gradient(to bottom, #000f0f, #021414, #031818, #041c1b, #04201f, #052c2b, #053937, #054744, #07625f, #087f7d, #069d9b, #00bcbc);
@@ -19,8 +19,8 @@ body{
     text-decoration: none;
     margin: 1.2rem;
 }
-.enlaceNav::hoover{
-    color:red;
+.enlaceNav:hover{
+    color:rgba(255,0,255,1);
 }
 
 .tamañoBuscador{
@@ -45,4 +45,9 @@ body{
 
 .imgTbody{
     color: white;
+}
+
+.paginacion{
+   display: flex;
+   justify-content: center;
 }
