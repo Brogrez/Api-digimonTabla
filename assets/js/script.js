@@ -19,7 +19,7 @@ function filtrar(datos){
             if(nombre.indexOf(textoBusqueda) !== -1){
                 contenido.innerHTML += `
                         <tr>
-                            <th scope="row"><img src=${e.img} width="30" height="30"></th>
+                            <th scope="row"><img src=${e.img} width="50" height="50"></th>
                             <td>${e.name}</td>
                             <td>${e.level}</td>
                         </tr>

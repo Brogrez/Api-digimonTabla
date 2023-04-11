@@ -1,15 +1,16 @@
 
 body{
-    background-image: url(../img/fondo7.png);
-    background-repeat: repeat;
-    background-size: 100%;
+    background-image: linear-gradient(to right, #0f2027, #12252c, #152931, #192e37, #1c333c, #1e3741, #213c46, #23404b, #254551, #274957, #2a4e5e, #2c5364);
 }
 .fondoNav{
-    background-image: linear-gradient(to bottom, #000f0f, #021414, #031818, #041c1b, #04201f, #052c2b, #053937, #054744, #07625f, #087f7d, #069d9b, #00bcbc);
-    -webkit-box-shadow: 3px 15px 38px 3px rgba(78,194,212,1);
-    -moz-box-shadow: 3px 15px 38px 3px rgba(78,194,212,1);
-    box-shadow: 3px 15px 38px 3px rgba(78,194,212,1);
+    background-image: linear-gradient(to bottom, #0f2027, #12252c, #152931, #192e37, #1c333c, #1e3741, #213c46, #23404b, #254551, #274957, #2a4e5e, #2c5364);
+    -webkit-box-shadow: -7px 52px 60px -20px rgba(44,83,100,1);
+    -moz-box-shadow: -7px 52px 60px -20px rgba(44,83,100,1);
+    box-shadow: -7px 52px 60px -20px rgba(44,83,100,1);
 }
+
+
+
 .imgLogo{
     margin: 0;
 }
@@ -20,7 +21,7 @@ body{
     margin: 1.2rem;
 }
 .enlaceNav:hover{
-    color:rgba(255,0,255,1);
+    color:#605B97;
 }
 
 .tamañoBuscador{
@@ -28,14 +29,13 @@ body{
 }
 
 .tabla{
-    background-image: linear-gradient(to right, #360033, #2e295c, #014a7b, #00698c, #0b8793);
+    background-image: linear-gradient(to right, #0f0c29, #131433, #19193e, #1f1e49, #262454, #242b5b, #223162, #203868, #184069, #184768, #204d66, #2c5364);
     border-radius: 15px;
-    -webkit-box-shadow: 4px 4px 41px 16px rgba(255,0,255,1);
-    -moz-box-shadow: 4px 4px 41px 16px rgba(255,0,255,1);
-    box-shadow: 4px 4px 41px 16px rgba(255,0,255,1);
+    -webkit-box-shadow: 0px 0px 83px 24px rgba(48,43,99,1);
+    -moz-box-shadow: 0px 0px 83px 24px rgba(48,43,99,1);
+    box-shadow: 0px 0px 83px 24px rgba(48,43,99,1);
+
    
-    
-    
 }
 .letrasTabla{
     color: white;
