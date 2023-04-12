@@ -5,15 +5,22 @@ let main = document.getElementById("cardIndividual");
 let card = document.getElementById('cardInd')
 let contenedorCard = document.getElementById('contenedorCard')
 let tabla = document.getElementById('hiddenTabla')
+let enlacePaginacion = document.querySelectorAll('.page-link')
+console.log( enlacePaginacion)
 // let paginacion = document.getElementById('paginacion')
 let arrayDigimons = []
+let paginaDigimons = [];
+
 
 function apiDigimon() {
   fetch(`https://digimon-api.vercel.app/api/digimon`)
     .then((response) => response.json())
     .then((datos) => {
         arrayDigimons = datos
-        inyectarContenido(datos)
+        dividirArrayOriginalEnGrupos()
+        paginarDigimons()
+        inyectarContenido(paginaDigimons[0])
+        
     });
 }
 
@@ -27,7 +34,7 @@ function filtrar(datos) {
     let nombre = e.name.toLowerCase();
     if (nombre.indexOf(textoBusqueda) !== -1) {
         card.innerHTML += `
-                    <div class="card fondo col-10 col-md-3 col-sm-5 m-2">
+                    <div class="card fondo col-10 col-md-3 col-sm-5 m-2 shadow-card">
                         <img src=${e.img} class="card-img-top">
                         <div class="card-body">
                         <h2>${e.name}</h2>
@@ -52,10 +59,41 @@ function inyectarContenido(informacion) {
   });
 }
 
+function dividirArrayOriginalEnGrupos(){
+    
+    for(let i = 0; i < arrayDigimons.length; i += 20){
+        paginaDigimons.push(arrayDigimons.slice(i, i+20))
+    }
+
+    console.log(paginaDigimons)
+    /**
+     * crear un evento que vincule un arreglo a una pagina del html
+     * 
+     */
+}
+
+function paginarDigimons(){
+
+  enlacePaginacion.forEach(enlace =>{
+    enlace.addEventListener('click',event =>{
+      contenido.innerHTML = ""
+      indicePagina = event.target.getAttribute('data-indice');
+      inyectarContenido(paginaDigimons[indicePagina])
+    })
+  });
+   
+}
+
+
+// paginarDigimons()
 btnDigimon.addEventListener("click", () => {
     filtrar(arrayDigimons)
 });
-apiDigimon();
+
+window.addEventListener("DOMContentLoaded",() =>{
+    apiDigimon()
+
+});
 
 // apiDigimon()
 
