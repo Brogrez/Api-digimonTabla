@@ -37,7 +37,7 @@
 
             <form class="d-flex">
               <input id="BuscarDigimon" class="form-control me-2" type="search" placeholder="Buscar Digimon" aria-label="Search">
-              <button id="btn-buscarDigimon" class="btn btn-outline-success" type="submit">Buscar</button>
+              <button id="btn-buscarDigimon" class="btn btn-outline-success" type="button">Buscar</button>
             </form>
 
           </div>
@@ -45,6 +45,8 @@
       </nav>
 
     <main id="cardIndividual">
+
+      <div id="hiddenTabla">
         <!-- <div class="container mt-5 tabla"> -->
             <table class="table container mt-5 tabla w-50">
                 <thead>
@@ -60,7 +62,7 @@
                 </tbody>
             </table>
         <!-- </div> -->
-        <nav aria-label="..." class="paginacion">
+        <nav aria-label="..." class="paginacion" id="paginacion">
           <ul class="pagination pagination-lg">
             <li class="page-item active" aria-current="page">
               <span class="page-link">1</span>
@@ -69,9 +71,15 @@
             <li class="page-item"><a class="page-link" href="#">3</a></li>
           </ul>
         </nav>
+      </div>
+
+        <div class="container" id="contenedorCard" hidden>
+          <div class="todo row justify-content-center" id="cardInd" >
+  
+          </div>
+      </div>
 
     </main>
-
 
 
 
